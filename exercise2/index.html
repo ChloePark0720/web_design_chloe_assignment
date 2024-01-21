@@ -1,0 +1,210 @@
+
+<!-- This demo features an HTML template created in VS Code -->
+<!-- To get the template, create a new [your name here].html file in VS Code, and then press ! and ENTER -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TODO: Add your title here!</title>
+
+	<!-- All CSS goes inside the <style> element! -->
+	<style>
+
+		/* This resets some CSS defaults that make things harder to work with */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			scroll-behavior: smooth;
+		}
+
+		/* Loading in a custom font! */
+		/* Jakarta is a variable font with a "wght" axis */
+		/* We can use the "font-weight" CSS property to specify any weight between 200 and 800 */
+		@font-face {
+			font-family: 'Roboto';
+			src: url('PlusJakartaSans-VariableFont_wght.ttf');
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Roboto';
+			src: url('PlusJakartaSans-Italic-VariableFont_wght.ttf');
+			font-style: italic;
+		}
+
+		/* All visible content lives inside the <body> element */
+		body {
+			font-family: 'Roboto', sans-serif;
+			background-color: #efefef;
+			color: #2f2f2f; /* font color */
+		}
+
+		/* Our article will live inside this container */
+		.container {
+			/* Set the size of the article */
+			max-width: 1000px;
+			width: 100%;
+			margin: auto;
+
+			padding: 120px 80px; /* top padding, side padding */
+			background-color: #fafafa;
+		}
+
+		/* Basic mobile responsiveness */
+		@media only screen and (max-width: 800px) {
+			.container {
+				padding: 80px 20px; /* top padding, side padding */
+			}
+		}
+
+		/* Text styles */
+		h1 {
+			font-size: 64px;
+			line-height: 1em;
+			font-weight: 200;
+			margin-bottom: 30px;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h2 {
+			font-size: 14px;
+			line-height: 1em;
+			font-weight: 800;
+			letter-spacing: .05em;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h3 {
+			font-size: 24px;
+			line-height: 1em;
+			margin-top: 40px;
+			margin-bottom: 20px;
+			font-weight: 500;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p {
+			margin-bottom: 20px;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1.4em;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		a {
+			color: black;
+		}
+		a:hover {
+			opacity: .5;
+		}
+		sup {
+			font-size: .6em;
+			line-height: 0;
+			font-weight: 800;
+		}
+		sup a {
+			text-decoration: none;
+		}
+		sup a:hover {
+			opacity: .5;
+		}
+
+		/* Image styles (for your charts!) */
+		figure {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		img {
+			display: block;
+			width: 100%;
+		}
+		/* Image captions */
+		figcaption {
+			font-size: 14px;
+			font-style: italic;
+			font-weight: 350;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			opacity: .5;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		/* Endnotes */
+		.endnotes {
+			padding-top: 20px;
+			border-top: 1px solid black;
+			margin-top: 80px;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 1.4em;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			list-style: none;
+		}
+		.endnotes li {
+			margin-top: 5px;
+			font-weight: 350;
+		}
+	</style>
+</head>
+
+<!-- All visible content goes inside the <body> element! -->
+<body>
+
+	<div class="container">
+		<h1>
+			United States v. Cleveland Indians Baseball Co
+		</h1>
+		<h2>
+			Some sort of subtitle
+		</h2>
+
+		<p>
+			<strong><em>United States v. Cleveland Indians Baseball Company</em></strong>, 532 U.S. 200 (2001), is a <a href="https://en.wikipedia.org/wiki/Supreme_Court_of_the_United_States">United States Supreme Court</a>  case that deals with the federal <a href="https://en.wikipedia.org/wiki/Tax_law"> tax code</a>. The question before the court was “Is back-pay subject to federal taxes under the <a href="https://en.wikipedia.org/wiki/Federal_Insurance_Contributions_Act"> Federal Insurance Contributions Act </a> and the <a href="https://en.wikipedia.org/wiki/Federal_Insurance_Contributions_Act"> Federal Unemployment Tax Act </a>, based on the year the money should have been paid out?” The court held that wages are to be taxed on the year they were actually paid.[1] Carter G. Phillips argued for the respondent and James A. Feldman argued for the petitioner, the <a href="https://en.wikipedia.org/wiki/United_States_Department_of_Justice"> Department of Justice</a>.
+        </p>
+
+
+		<figure>
+			<img src="supreme_court_us.png">
+			<figcaption>
+				Supreme Court of the United States
+			</figcaption>
+		</figure>
+
+		<h3>
+			Background
+		</h3>
+
+		<p>
+			The Cleveland Indians Baseball Company owed eight of its players back wages that were due in 1986 and fourteen players back wages that were due in 1987. The company paid the wages in 1994. The company paid taxes on the wages for the 1994 formula. The Company then requested that some of the taxes be refunded by the IRS under the argument that the taxes should be paid based on the year that they were supposed to be paid instead of the year they were actually paid. The taxes would have been significant because the Federal Insurance Contributions Act (FICA) and the Federal Unemployment Tax Act (FUTA) which are used to fund Medicare, Social Security and Unemployment. The FICA and FUTA were both passed after 1987. The Cleveland Indians used Sixth Court precedent in its argument that late wages are taxed upon the year they should have paid. The District Court bound by precedent ordered the government to return the taxes.[2] The Sixth Court of Appeals affirmed the District Court’s ruling.[3]
+		</p>
+
+		<h3>
+			Opinion of the Court
+		</h3>
+
+		<p>
+			Unlike the Sixth Court of Appeals the court had limited precedent in which to follow. Therefore, the court simply decided to use the IRS’s interpretation of the law. Justice Ginsburg, delivering the opinion of the court stated “according due respect to the service’s reasonable, longstanding construction of the governments statues and its own regulations, we hold that back wages are subject to FICA and FUTA taxes by reference to the year the wages are in fact paid.”
+		</p>
+
+
+		<ul class="endnotes">
+			<li id="endnote-1">
+				<sup>[1]</sup> United States v. Cleveland Indians Baseball Co., <a href="https://en.wikipedia.org/wiki/List_of_United_States_Supreme_Court_cases,_volume_532"> 532 U.S. 200 </a>(2001).
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
